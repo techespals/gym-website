@@ -1,0 +1,350 @@
+/* ==================================================
+   WHY CHOOSE US SECTION
+================================================== */
+
+.why-us {
+  position: relative;
+  overflow: hidden;
+
+  padding: 140px 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 107, 0, 0.08),
+      transparent 35%
+    ),
+    #070707;
+}
+
+.why-us::before {
+  content: "";
+
+  position: absolute;
+
+  top: -250px;
+  right: -250px;
+
+  width: 700px;
+  height: 700px;
+
+  background:
+    radial-gradient(
+      rgba(255, 107, 0, 0.12),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.why-us .section-title {
+  text-align: center;
+
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+.why-us .section-title span {
+  display: inline-block;
+
+  color: #ff6b00;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 20px;
+}
+
+.why-us .section-title h2 {
+  color: #fff;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+
+  text-transform: uppercase;
+}
+
+.why-us .section-title p {
+  margin-top: 28px;
+
+  color: #a9a9a9;
+
+  font-size: 1.05rem;
+
+  line-height: 1.9;
+}
+
+/* ==========================================
+   STATS GRID
+========================================== */
+
+.stats-grid {
+  margin-top: 80px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.stat-card {
+  padding: 35px 25px;
+
+  text-align: center;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  backdrop-filter: blur(24px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.4s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(255, 107, 0, 0.4);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(255, 107, 0, 0.12);
+}
+
+.stat-card h3 {
+  color: #ff6b00;
+
+  font-size: 3rem;
+
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #c4c4c4;
+
+  font-size: 0.95rem;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   FEATURES GRID
+========================================== */
+
+.why-grid {
+  margin-top: 90px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+/* ==========================================
+   FEATURE CARD
+========================================== */
+
+.why-card {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 420px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border-radius: 30px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.45s ease;
+}
+
+.why-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 107, 0, 0.18),
+      transparent 65%
+    );
+
+  opacity: 0;
+
+  transition: 0.45s ease;
+}
+
+.why-card:hover::before {
+  opacity: 1;
+}
+
+.why-card:hover {
+  transform:
+    translateY(-10px)
+    scale(1.01);
+
+  border-color: rgba(255, 107, 0, 0.35);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 35px rgba(255, 107, 0, 0.14);
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.why-icon {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.why-card:hover .why-icon {
+  transform: scale(1.08);
+}
+.why-card:hover .why-icon {
+  transform:
+    scale(1.08)
+    rotate(-3deg);
+
+  filter:
+    drop-shadow(
+      0 0 20px rgba(255, 107, 0, 0.4)
+    );
+}
+.why-card::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.96) 15%,
+      rgba(0, 0, 0, 0.45) 55%,
+      transparent
+    );
+}
+/* ==========================================
+   TEXT
+========================================== */
+
+.why-card h3 {
+  position: relative;
+
+  z-index: 5;
+
+  color: white;
+
+  font-size: 2rem;
+
+  margin: 0 40px 18px;
+
+  font-weight: 700;
+}
+
+.why-card p {
+  position: relative;
+
+  z-index: 5;
+
+  margin: 0 40px 40px;
+
+  color: #d0d0d0;
+
+  line-height: 1.8;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .why-us {
+    padding: 100px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+ .why-card {
+  min-height: 350px;
+}
+  .why-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .why-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .why-us .section-title h2 {
+    font-size: 3rem;
+  }
+
+}

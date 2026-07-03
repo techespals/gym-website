@@ -1,0 +1,48 @@
+.primary-btn {
+  border: none;
+  outline: none;
+
+  background: var(--gradient-primary);
+
+  color: white;
+
+  padding: 16px 32px;
+
+  border-radius: 50px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.primary-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-primary);
+}
+main {
+  overflow-x: hidden;
+}
+.primary-btn {
+  border: none;
+  outline: none;
+
+  background: var(--gradient-primary);
+
+  color: white;
+
+  padding: 16px 32px;
+
+  border-radius: 50px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+

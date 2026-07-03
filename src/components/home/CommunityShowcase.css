@@ -1,0 +1,185 @@
+/* ==========================================
+   COMMUNITY SECTION
+========================================== */
+
+.community {
+  padding: 140px 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 107, 0, 0.08),
+      transparent 35%
+    ),
+    #080808;
+}
+
+.community-title {
+  text-align: center;
+
+  max-width: 800px;
+
+  margin: 0 auto 90px;
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.community-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.community-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  aspect-ratio: 16 / 9;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.45s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(255, 107, 0, 0.4);
+
+  box-shadow:
+    0 25px 60px rgba(255, 107, 0, 0.15);
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.community-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center center;
+
+  display: block;
+
+  transition: 0.8s ease;
+}
+
+.community-card:hover img {
+  transform: scale(1.06);
+}
+
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+.community-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 28px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.2),
+      transparent
+    );
+}
+
+.community-overlay span {
+  width: fit-content;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 107, 0, 0.15);
+
+  border: 1px solid rgba(255, 107, 0, 0.2);
+
+  color: #ff6b00;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  margin-bottom: 16px;
+}
+
+.community-overlay h3 {
+  color: #fff;
+
+  font-size: 1.8rem;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .community {
+    padding: 100px 0;
+  }
+
+  .community-title {
+    margin-bottom: 60px;
+  }
+
+  .community-card {
+    aspect-ratio: 16 / 10;
+  }
+
+  .community-overlay {
+    padding: 20px;
+  }
+
+  .community-overlay h3 {
+    font-size: 1.4rem;
+  }
+
+}
